@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url(font/RetroMario-Regular.otf);
+}
+
+h1 {
+    font-family: 'font';
+    font-weight: 100;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10vh;
+}
+
+.title {
+    font-size: 5rem;
+    word-spacing: 20px;
+    font-weight: 100;
+}
+
+.title span:nth-child(1) {
+    color: rgb(65, 119, 237);
+}
+
+.title span:nth-child(2) {
+    color: rgb(92, 210, 114);
+}
+
+.scoreGame {
+    display: flex;
+    gap: 20px;
+    font-weight: 100;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    margin: 80px 0px;
+}
+
+.case {
+    border: solid;
+    border-top: none;
+    border-right: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-size: 3rem;
+    background-color: rgba(128, 128, 128, 0.193);
+}
+
+.case:hover {
+    background-color: rgba(128, 128, 128, 0.092);
+}
+
+.case:nth-child(1),
+.case:nth-child(4),
+.case:nth-child(7) {
+    border-left: none;
+}
+
+.case:nth-child(7),
+.case:nth-child(8),
+.case:nth-child(9) {
+    border-bottom: none;
+}
+
+.grille img {
+    width: 100px;
+}
+
+#tour {
+    color: black;
+    font-size: 4rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.party {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 200px;
+}
+
+.btn {
+    display: flex;
+    gap: 50px;
+}
+
+.btn button {
+    padding: 12px 55px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn button:nth-child(1):hover {
+    background-color: rgb(65, 119, 237);
+    color: white;
+}
+
+.btn button:nth-child(2):hover {
+    background-color: rgb(92, 210, 114);
+    color: white;
+}
+
+
+.winner {
+    background-color: rgb(92, 210, 114);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Le Jeu<span>x</span> du M<span>o</span>rpion</h1>
+        <div class="setting">
+            <div class="btn">
+                <button onclick="restart()">Restart</button>
+                <button onclick="rule()">Rules</button>
+            </div>
+        </div>
+        <div class="party">
+            <div class="grille" id="grille">
+                <input type="button" class="case" onclick="runGame(1)">
+                <input type="button" class="case" onclick="runGame(2)">
+                <input type="button" class="case" onclick="runGame(3)">
+                <input type="button" class="case" onclick="runGame(4)">
+                <input type="button" class="case" onclick="runGame(5)">
+                <input type="button" class="case" onclick="runGame(6)">
+                <input type="button" class="case" onclick="runGame(7)">
+                <input type="button" class="case" onclick="runGame(8)">
+                <input type="button" class="case" onclick="runGame(9)">
+            </div>
+            <p id="tour">Tour du Joueur 1</p>
+        </div>
+    </div>
+
+    <script src="app2.js"></script>
+</body>
+
+</html>
+
+
+<!--
+    <div class="container">
+        <h1 class="title">Le Jeu<span>x</span> du M<span>o</span>rpion</h1>
+        <div class="setting">
+            <div class="scoreGame">
+                <h1 id="scoreIA">IA : <span>0</span></h1>
+                <h1 id="scoreUser">USER : <span>0</span></h1>
+            </div>
+            <div class="btn">
+                <button>Rules</button>
+                <button>Restart</button>
+            </div>
+        </div>
+        <div class="party">
+            <div class="grille" id="grille">
+                <div class="case" onclick="input(1),{once : true}"><img src="" alt=""></div>
+                <div class="case" onclick="input(2),{once : true}"><img src="" alt=""></div>
+                <div class="case" onclick="input(3),{once : true}"><img src="" alt=""></div>
+                <div class="case" onclick="input(4),{once : true}"><img src="" alt=""></div>
+                <div class="case" onclick="input(5),{once : true}"><img src="" alt=""></div>
+                <div class="case" onclick="input(6),{once : true}"><img src="" alt=""></div>
+                <div class="case" onclick="input(7),{once : true}"><img src="" alt=""></div>
+                <div class="case" onclick="input(8),{once : true}"><img src="" alt=""></div>
+                <div class="case" onclick="input(9),{once : true}"><img src="" alt=""></div>
+            </div>
+            <p id="tour">Tour joueur 1 !</p>
+        </div>
+    </div>
+-->
